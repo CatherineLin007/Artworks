@@ -3,16 +3,26 @@ Click for fireworks!
 */
 ArrayList<Burst> bursts;
 ArrayList<ArrayList<Particle>> firepoints;
-
+boolean notClicked = true;
 
 void setup() {
   size(800, 800);
   bursts = new ArrayList();
+  fill(0);
+  PFont f = createFont("Arial",30,true);
+  textFont(f, 30);
+  
 }
 
 void draw() {
   noStroke();
+  fill(0);
   // transparent black background
+  
+  if(notClicked){
+    fill(255);
+    text("Click me!", 330, 300);
+  }
   fill(0, 45);
   rect(0, 0, width, height);
 
@@ -24,6 +34,7 @@ void draw() {
 
 
 void mousePressed() {
+  if(notClicked) notClicked = false;
   for(int i=0; i < int(random(3, 7)); i++){
     bursts.add(new Burst(int(random(200, 600)),int(random(100, 400)), int(random(50, 200))));
   }
