@@ -7,7 +7,7 @@ boolean notClicked = true;
 int textFrameCount = 0;
 
 void setup() {
-  size(1100, 700);
+  size(1100, 650);
   bursts = new ArrayList();
   fill(0);
   PFont f = createFont("Arial",30,true);
@@ -24,12 +24,12 @@ void draw() {
     double alph = (textFrameCount % 200 / 100.0);
     //println(alph);
     fill((int)(255 * (alph < 1 ? alph : 2 - alph)));
-    text("Click me!", 40, 660);
+    text("Click me!", 40, 610);
     textFrameCount++;
   }
   else{
     fill(255);
-    text("Click me!", 480, 360);
+    text("Click me!", 490, 360);
   }
   fill(0, 45);
   rect(0, 0, width, height);
