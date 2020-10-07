@@ -1,14 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,900);
 body {
   font-family: 'Roboto', sans-serif;
+
 }
 
-/* Stars 
-------------------------------------- */
+.welcome{
+  animation: welcomeAnimation 5s ease-in-out 1;
+}
+
+@keyframes welcomeAnimation{
+  0%{
+    color: black;
+  }
+}
 
 #space .stars {
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
