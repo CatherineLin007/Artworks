@@ -7,7 +7,7 @@ boolean notClicked = true;
 int textFrameCount = 0;
 
 void setup() {
-  size(800, 800);
+  size(800, 700);
   bursts = new ArrayList();
   fill(0);
   PFont f = createFont("Arial",30,true);
@@ -24,7 +24,7 @@ void draw() {
     double alph = (textFrameCount % 200 / 100.0);
     //println(alph);
     fill((int)(255 * (alph < 1 ? alph : 2 - alph)));
-    text("Click me!", 40, 760);
+    text("Click me!", 40, 660);
     textFrameCount++;
   }
   else{
@@ -45,7 +45,7 @@ void draw() {
 void mousePressed() {
   if(notClicked) notClicked = false;
   for(int i=0; i < int(random(3, 7)); i++){
-    bursts.add(new Burst(int(random(200, 600)),int(random(100, 400)), int(random(50, 200))));
+    bursts.add(new Burst(int(random(200, 600)),int(random(100, 300)), int(random(50, 200))));
   }
   
   
