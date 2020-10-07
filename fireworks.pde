@@ -21,7 +21,7 @@ void draw() {
   
   if(notClicked){
     fill(255);
-    text("Click me!", 330, 300);
+    text("Click me!", 340, 300);
   }
   fill(0, 45);
   rect(0, 0, width, height);
