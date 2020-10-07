@@ -29,7 +29,7 @@ void draw() {
   }
   else{
     fill(255);
-    text("Click me!", 460, 360);
+    text("Click me!", 480, 360);
   }
   fill(0, 45);
   rect(0, 0, width, height);
