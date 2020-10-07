@@ -19,11 +19,18 @@ void draw() {
   noStroke();
   fill(0);
   // transparent black background
-  double alph = (textFrameCount % 200 / 100.0);
-  //println(alph);
-  fill((int)(255 * (alph < 1 ? alph : 2 - alph)));
-  text("Click me!", 40, 760);
   
+  if(!notClicked){
+    double alph = (textFrameCount % 200 / 100.0);
+    //println(alph);
+    fill((int)(255 * (alph < 1 ? alph : 2 - alph)));
+    text("Click me!", 40, 760);
+    textFrameCount++;
+  }
+  else{
+    fill(255);
+    text("Click me!", 340, 300);
+  }
   fill(0, 45);
   rect(0, 0, width, height);
 
@@ -31,7 +38,7 @@ void draw() {
     Burst b = bursts.get(i);
     if (b.update()) bursts.remove(i);
   }
-  textFrameCount++;
+  
 }
 
 
