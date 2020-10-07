@@ -27,7 +27,7 @@ body {
     radial-gradient(2px 2px at 20px 30px, rgb(255, 255, 255), rgba(0,0,0,0)),
     radial-gradient(1px 1px at 40px 70px, rgb(255, 255, 255), rgba(0,0,0,0)),
     radial-gradient(2px 2px at 50px 160px, rgb(255, 255, 255), rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 90px 40px, rgb(255, 255, 255), rgba(0,0,0,0)),
+    radial-gradient(3px 3px at 90px 40px, rgb(255, 255, 255), rgba(0,0,0,0)),
     radial-gradient(2px 2px at 130px 80px, rgb(255, 255, 255), rgba(0,0,0,0)),
     radial-gradient(2px 2px at 160px 120px,rgb(255, 255, 255), rgba(0,0,0,0));
   background-repeat: repeat;
