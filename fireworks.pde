@@ -9,7 +9,7 @@ int textFrameCount = 0;
 void setup() {
   size(1100, 650);
   bursts = new ArrayList();
-  fill(0);
+  fill(color(0, 0, 0));
   PFont f = createFont("Arial",30,true);
   textFont(f, 30);
   
@@ -17,7 +17,7 @@ void setup() {
 
 void draw() {
   noStroke();
-  fill(0);
+  fill(color(0, 0, 0));
   // transparent black background
   
   if(!notClicked){
