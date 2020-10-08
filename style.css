@@ -9,12 +9,12 @@ body {
 
 @keyframes welcomeAnimation{
   0%{
-    color: black;
+    color: #0f133d;
   }
 }
 
 #space .stars {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -22,7 +22,7 @@ body {
 }
 
 .stars {
-
+  z-index: 2;
   background-image: 
     radial-gradient(2px 2px at 20px 30px, rgb(255, 255, 255), rgba(0,0,0,0)),
     radial-gradient(1px 1px at 40px 70px, rgb(255, 255, 255), rgba(0,0,0,0)),
@@ -75,7 +75,7 @@ body {
 }
 
 .header, .footer {
-  background: #000000;
+  background: #0f133d00;
   color: #fff;
   padding: 30px;
   text-align: center;
@@ -113,11 +113,15 @@ body {
 .section {
   width: 100%;
   position: relative;
+
+  background-color: #0f133d00;
 }
 .section .left, .section .middle, .section .right {
   width: 100%;
   display: block;
-  color: rgb(0, 0, 0);
+
+  background-color: #0f133d;
+  color:black;
   box-sizing: border-box;
   left: 0;
   padding: 30px;
@@ -406,3 +410,10 @@ ul li:hover {
 }
 
 
+.sectionTitle{
+  position: relative;
+  width: auto;
+  color: white;
+  background-color: #29215f00;
+  background-size: 600px;
+}
