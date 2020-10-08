@@ -22,7 +22,6 @@ body {
 }
 
 .stars {
-  z-index: 2;
   background-image: 
     radial-gradient(2px 2px at 20px 30px, rgb(255, 255, 255), rgba(0,0,0,0)),
     radial-gradient(1px 1px at 40px 70px, rgb(255, 255, 255), rgba(0,0,0,0)),
@@ -120,7 +119,7 @@ body {
   width: 100%;
   display: block;
 
-  background-color: #0f133d;
+  background-color: #0f133d00;
   color:black;
   box-sizing: border-box;
   left: 0;
